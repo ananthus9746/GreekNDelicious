@@ -1,0 +1,553 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: #ffffff;
+    overflow-x: hidden;
+}
+
+/* Page Container */
+.pageContainer {
+    min-height: 100vh;
+    position: relative;
+}
+
+/* About Section */
+.aboutSection {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.aboutSection::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image:
+        linear-gradient(45deg, transparent 35%, rgba(229, 62, 142, 0.05) 35%, rgba(229, 62, 142, 0.05) 40%, transparent 40%),
+        linear-gradient(-45deg, transparent 35%, rgba(229, 62, 142, 0.05) 35%, rgba(229, 62, 142, 0.05) 40%, transparent 40%);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
+    z-index: 1;
+}
+
+.aboutContainer {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+
+.sectionHeader {
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.sectionTitle {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-weight: 900;
+    color: #e53e8e;
+    text-transform: uppercase;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.sectionSubtitle {
+    font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+    color: #666;
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.sectionDescription {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.aboutContent {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.aboutText {
+    animation: slideInLeft 0.8s ease-out 0.3s both;
+}
+
+.aboutText h3 {
+    font-size: clamp(1.5rem, 4vw, 2.2rem);
+    color: #e53e8e;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}
+
+.aboutText p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.storyHighlight {
+    background: rgba(229, 62, 142, 0.1);
+    padding: 2rem;
+    border-radius: 15px;
+    border-left: 4px solid #e53e8e;
+    margin: 2rem 0;
+}
+
+.storyHighlight h4 {
+    color: #e53e8e;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.aboutImage {
+    position: relative;
+    animation: slideInRight 0.8s ease-out 0.5s both;
+}
+
+.aboutImageWrapper {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.aboutImageWrapper img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.aboutImageWrapper:hover img {
+    transform: scale(1.05);
+}
+
+.imageOverlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.imageOverlay h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+/* Features Section */
+.featuresSection {
+    padding: 6rem 2rem;
+    background: white;
+}
+
+.featuresGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.featureCard {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(229, 62, 142, 0.05);
+    border-radius: 20px;
+    border: 2px solid rgba(229, 62, 142, 0.1);
+    transition: all 0.3s ease;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.featureCard:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(229, 62, 142, 0.2);
+    border-color: rgba(229, 62, 142, 0.3);
+}
+
+.featureIcon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.featureCard h3 {
+    font-size: 1.5rem;
+    color: #e53e8e;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.featureCard p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Values Section */
+.valuesSection {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #e53e8e 0%, #d53f8c 100%);
+    color: white;
+    text-align: center;
+}
+
+.valuesSection .sectionTitle {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.valuesSection .sectionSubtitle,
+.valuesSection .sectionDescription {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.valuesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.valueCard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 2.5rem 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.valueCard:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+}
+
+.valueCard h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+/* Statistics Section */
+.statsSection {
+    padding: 4rem 2rem;
+    background: white;
+}
+
+.statsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.statCard {
+    text-align: center;
+    padding: 2rem;
+}
+
+.statNumber {
+    font-size: 3rem;
+    font-weight: 900;
+    color: #e53e8e;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.statLabel {
+    font-size: 1.1rem;
+    color: #666;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+}
+
+/* Menu Preview Section */
+.menuPreview {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+}
+
+.menuGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.menuItem {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.menuItem:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.menuItemImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menuItemContent {
+    padding: 1.5rem;
+}
+
+.menuItemContent h3 {
+    font-size: 1.3rem;
+    color: #e53e8e;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.menuItemContent p {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.menuItemPrice {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #e53e8e;
+}
+
+/* CTA Section */
+.ctaSection {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #333 0%, #555 100%);
+    color: white;
+    text-align: center;
+}
+
+.ctaSection .sectionTitle {
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.ctaSection .sectionDescription {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 3rem;
+}
+
+.ctaButtons {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.ctaButton {
+    padding: 1.2rem 3rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.ctaButton.primary {
+    background: #e53e8e;
+    color: white;
+    box-shadow: 0 8px 25px rgba(229, 62, 142, 0.4);
+}
+
+.ctaButton.primary:hover {
+    background: #d53f8c;
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(229, 62, 142, 0.5);
+}
+
+.ctaButton.secondary {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.ctaButton.secondary:hover {
+    background: white;
+    color: #333;
+    transform: translateY(-3px);
+}
+
+/* Decorative Elements */
+.greekOrnament {
+    position: absolute;
+    color: rgba(229, 62, 142, 0.1);
+    font-size: 6rem;
+    z-index: 1;
+    animation: float 8s ease-in-out infinite;
+}
+
+.ornament1 {
+    top: 10%;
+    left: 5%;
+    animation-delay: 0s;
+}
+
+.ornament2 {
+    bottom: 20%;
+    right: 8%;
+    animation-delay: 3s;
+}
+
+.ornament3 {
+    top: 40%;
+    left: 8%;
+    animation-delay: 6s;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .aboutContent {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .featuresGrid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 2rem;
+    }
+
+    .menuGrid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+
+    .aboutSection,
+    .featuresSection,
+    .valuesSection,
+    .menuPreview,
+    .ctaSection {
+        padding: 4rem 1.5rem;
+    }
+
+    .statsGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .ctaButtons {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .greekOrnament {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 640px) {
+
+    .aboutSection,
+    .featuresSection,
+    .valuesSection,
+    .menuPreview,
+    .ctaSection {
+        padding: 3rem 1rem;
+    }
+
+    .featuresGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .valuesGrid {
+        grid-template-columns: 1fr;
+    }
+
+    .statsGrid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .menuGrid {
+        grid-template-columns: 1fr;
+    }
+}

@@ -1,0 +1,272 @@
+.contact {
+    padding-top: 80px;
+    min-height: 100vh;
+}
+
+.contactHeader {
+    text-align: center;
+    padding: 4rem 2rem 2rem;
+    background-color: #004a99;
+    color: white;
+}
+
+.contactHeader h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contactHeader p {
+    font-size: 1.3rem;
+    opacity: 0.9;
+}
+
+.contactContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.contactInfo h2 {
+    color: #004a99;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.contactInfo>.infoSection>p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.contactDetails {
+    margin-bottom: 2rem;
+}
+
+.contactItem {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contactItem:hover {
+    transform: translateX(5px);
+}
+
+.contactIcon {
+    font-size: 2rem;
+    min-width: 50px;
+    text-align: center;
+}
+
+.contactText h3 {
+    color: #004a99;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.contactText p {
+    color: #6c757d;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.socialSection h3 {
+    color: #004a99;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.socialLink {
+    color: #004a99;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 0.8rem 1.5rem;
+    border: 2px solid #004a99;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.socialLink:hover {
+    background: #004a99;
+    color: white;
+    transform: translateY(-2px);
+}
+
+.contactForm {
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.contactForm h2 {
+    color: #004a99;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.formRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    color: #004a99;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+.formGroup input,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #e9ecef;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+    font-family: inherit;
+}
+
+.formGroup input:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: #004a99;
+}
+
+.formGroup textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.submitBtn {
+    background: #004a99;
+    color: white;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    font-size: 1.1rem;
+}
+
+.submitBtn:hover:not(:disabled) {
+    background: #004a99;
+    transform: translateY(-2px);
+}
+
+.submitBtn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+}
+
+.faqSection {
+    padding: 4rem 2rem;
+    background: #f8f9fa;
+}
+
+.faqContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.faqContainer h2 {
+    font-size: 2.5rem;
+    color: #004a99;
+    text-align: center;
+    margin-bottom: 3rem;
+    font-weight: 700;
+}
+
+.faqGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.faqItem {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.faqItem:hover {
+    transform: translateY(-5px);
+}
+
+.faqItem h3 {
+    color: #004a99;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.faqItem p {
+    color: #6c757d;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .contactHeader h1 {
+        font-size: 2.5rem;
+    }
+
+    .contactHeader {
+        padding: 3rem 1rem 2rem;
+    }
+
+    .contactContainer {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .formRow {
+        grid-template-columns: 1fr;
+    }
+
+    .faqSection {
+        padding: 3rem 1rem;
+    }
+
+    .faqContainer h2 {
+        font-size: 2rem;
+    }
+
+    .faqGrid {
+        grid-template-columns: 1fr;
+    }
+}

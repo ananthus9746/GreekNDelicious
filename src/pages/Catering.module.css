@@ -1,0 +1,242 @@
+.catering {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+.cateringHeader h1 {
+    color: #E91E63;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.cateringHeader p {
+    text-align: center;
+    color: #555;
+}
+
+.eventFilter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.eventBtn {
+    background: #FCE4EC;
+    border: 1px solid #E91E63;
+    color: #E91E63;
+    margin: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+}
+
+.eventBtn:hover,
+.eventBtn.active {
+    background: #E91E63;
+    color: #fff;
+}
+
+.coverSection {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 40px;
+}
+
+.coverImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7);
+}
+
+.coverText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    z-index: 1;
+}
+
+.coverText h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.coverText p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.servicesGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    padding: 0 20px;
+}
+
+.serviceCard {
+    display: flex;
+    flex-direction: row;
+    height: 300px;
+    background: #fff;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.serviceImage {
+    flex: 1;
+    position: relative;
+    overflow: hidden;
+}
+
+.serviceImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.serviceContent {
+    flex: 1;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.serviceContent h3 {
+    color: #E91E63;
+    margin-bottom: 10px;
+}
+
+.serviceDescription {
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.serviceFeatures h4 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.serviceFeatures ul {
+    padding-left: 20px;
+    color: #444;
+}
+
+.serviceFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.price {
+    font-weight: bold;
+    color: #E91E63;
+}
+
+.inquireBtn {
+    background: #E91E63;
+    border: none;
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.inquireBtn:hover {
+    background: #c2185b;
+}
+
+.cateringInfo {
+    background: #FCE4EC;
+    padding: 40px 20px;
+    margin-top: 40px;
+    border-radius: 12px;
+}
+
+.cateringInfo h2 {
+    color: #E91E63;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.infoGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.infoItem h3 {
+    color: #E91E63;
+    margin-bottom: 10px;
+}
+
+.infoItem p {
+    color: #444;
+}
+
+.contactCta {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contactCta h2 {
+    color: #E91E63;
+    margin-bottom: 10px;
+}
+
+.contactCta p {
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.ctaButtons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.primaryBtn {
+    background: #E91E63;
+    color: #fff;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.primaryBtn:hover {
+    background: #c2185b;
+}
+
+.secondaryBtn {
+    border: 2px solid #E91E63;
+    color: #E91E63;
+    padding: 12px 24px;
+    border-radius: 25px;
+    font-weight: bold;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.secondaryBtn:hover {
+    background: #E91E63;
+    color: #fff;
+}
