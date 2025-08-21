@@ -1,518 +1,155 @@
-/* CateringLayout1.module.css */
-
-.catering {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-  font-family: 'Arial', sans-serif;
+/* ------------------ HERO SECTION ------------------ */
+.heroSection {
+    position: relative;
+    width: 100%;
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+.heroVideo {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
 
-/* Hero Section */
-.hero {
-  position: relative;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-}
-
-.heroBackground {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(45deg, #FFD93D, #FF6B6B, #4ECDC4, #6C5CE7);
-  background-size: 400% 400%;
-  animation: gradientShift 8s ease infinite;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-@keyframes gradientShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-.sunburst {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle, rgba(255,217,61,0.3) 0%, transparent 70%);
-  border-radius: 50%;
-  animation: rotate 20s linear infinite;
-}
-
-@keyframes rotate {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
-}
-
-.heroContent {
-  position: relative;
-  z-index: 2;
-  text-align: center;
-  color: white;
-  max-width: 600px;
-  padding: 40px;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border-radius: 20px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
+.heroOverlay {
+    text-align: center;
+    color: #fff;
+    max-width: 800px;
+    padding: 20px;
+    /* subtle overlay */
+    border-radius: 16px;
 }
 
 .heroTitle {
-  font-size: 4rem;
-  font-weight: 900;
-  margin-bottom: 20px;
-  line-height: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+    font-size: 3.4rem;
+    font-weight: bold;
+    margin-bottom: 1rem;    
 }
 
-.titleMain {
-  background: linear-gradient(45deg, #FFD93D, #FF6B6B);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+.heroSubtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 1.6;
 }
 
-.titleSub {
-  font-size: 2.5rem;
-  color: white;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+.heroButton {
+    background: #2E75AE;
+    color: #fff;
+    padding: 12px 48px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
-.heroDescription {
-  font-size: 1.2rem;
-  margin-bottom: 30px;
-  opacity: 0.9;
+.heroButton:hover {
+    background: #225e5f;
+    transform: translateY(-2px);
 }
 
-.heroStats {
-  display: flex;
-  justify-content: space-around;
-  margin-top: 40px;
-}
 
-.stat {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 5px;
-}
-
-.statNumber {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #FFD93D;
-}
-
-.statLabel {
-  font-size: 0.9rem;
-  opacity: 0.8;
-}
-
-/* Filter Section */
-.filterSection {
-  padding: 80px 0;
-  background: white;
-}
-
-.filterTitle {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 40px;
-  font-weight: 700;
-}
-
+/* ------------------ EVENT FILTER ------------------ */
 .eventFilter {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 40px 0;
 }
 
-.eventBtn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  padding: 25px 20px;
-  border: none;
-  border-radius: 15px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  font-family: inherit;
-}
-
-.eventBtn:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
-}
-
-.eventBtn.active {
-  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
-  color: white;
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(255,107,107,0.4);
-}
-
-.eventIcon {
-  font-size: 2rem;
-}
-
-.eventName {
-  font-size: 1rem;
-  font-weight: 600;
-}
-
-/* Services Section */
-.servicesSection {
-  padding: 80px 0;
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-}
-
-.servicesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.serviceCard {
-  background: white;
-  border-radius: 20px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  transition: all 0.4s ease;
-  animation: slideInUp 0.6s ease forwards;
-  animation-delay: var(--animation-delay);
-  opacity: 0;
-  transform: translateY(50px);
-}
-
-@keyframes slideInUp {
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.serviceCard:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
-}
-
-.serviceHeader {
-  position: relative;
-  height: 200px;
-  overflow: hidden;
-}
-
-.serviceImage {
-  width: 100%;
-  height: 100%;
-  position: relative;
-}
-
-.serviceImage img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.4s ease;
-}
-
-.serviceCard:hover .serviceImage img {
-  transform: scale(1.1);
-}
-
-.serviceOverlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: linear-gradient(45deg, var(--accent-color), transparent);
-  opacity: 0.8;
-}
-
-.servicePrice {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  background: var(--accent-color);
-  color: white;
-  padding: 10px 15px;
-  border-radius: 25px;
-  font-weight: bold;
-  font-size: 0.9rem;
-  z-index: 2;
-}
-
-.serviceBody {
-  padding: 30px;
-}
-
-.serviceName {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 15px;
-  color: var(--accent-color);
-}
-
-.serviceDescription {
-  color: #666;
-  line-height: 1.6;
-  margin-bottom: 20px;
-}
-
-.featuresTitle {
-  font-size: 1.1rem;
-  font-weight: 600;
-  color: #333;
-  margin-bottom: 15px;
-}
-
-.featuresList {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.featureItem {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 8px 0;
-  color: #555;
-  font-size: 0.95rem;
-}
-
-.featureIcon {
-  color: var(--accent-color);
-  font-weight: bold;
-  font-size: 1.1rem;
-}
-
-.serviceFooter {
-  padding: 0 30px 30px;
-}
-
-.inquireBtn {
-  width: 100%;
-  background: linear-gradient(135deg, var(--accent-color), var(--accent-color));
-  color: white;
-  border: none;
-  padding: 15px 25px;
-  border-radius: 10px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  font-family: inherit;
-}
-
-.inquireBtn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
-.btnArrow {
-  transition: transform 0.3s ease;
-}
-
-.inquireBtn:hover .btnArrow {
-  transform: translateX(5px);
-}
-
-/* Why Choose Section */
-.whyChooseSection {
-  padding: 80px 0;
-  background: white;
-}
-
-.sectionTitle {
-  text-align: center;
-  font-size: 2.5rem;
-  color: #333;
-  margin-bottom: 50px;
-  font-weight: 700;
-}
-
-.benefitsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-}
-
-.benefitCard {
-  background: linear-gradient(135deg, #f8f9fa 0%, #fff 100%);
-  padding: 40px 30px;
-  border-radius: 15px;
-  text-align: center;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  transition: all 0.3s ease;
-  border-top: 4px solid var(--benefit-color);
-}
-
-.benefitCard:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-}
-
-.benefitIcon {
-  font-size: 3rem;
-  margin-bottom: 20px;
-}
-
-.benefitCard h3 {
-  font-size: 1.3rem;
-  color: #333;
-  margin-bottom: 15px;
-  font-weight: 600;
-}
-
-.benefitCard p {
-  color: #666;
-  line-height: 1.6;
-}
-
-/* CTA Section */
-.ctaSection {
-  padding: 80px 0;
-}
-
-.ctaBackground {
-  background: linear-gradient(135deg, #FF6B6B 0%, #4ECDC4 100%);
-  border-radius: 20px;
-  margin: 0 20px;
-}
-
-.ctaContent {
-  text-align: center;
-  padding: 60px 40px;
-  color: white;
-}
-
-.ctaTitle {
-  font-size: 2.5rem;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.ctaDescription {
-  font-size: 1.2rem;
-  margin-bottom: 40px;
-  opacity: 0.9;
-}
-
-.ctaButtons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.primaryBtn,
-.secondaryBtn {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 30px;
-  border-radius: 50px;
-  text-decoration: none;
-  font-weight: 600;
-  font-size: 1.1rem;
-  transition: all 0.3s ease;
-  min-width: 150px;
-  justify-content: center;
-}
-
-.primaryBtn {
-  background: white;
-  color: #FF6B6B;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-}
-
-.primaryBtn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
-}
-
-.secondaryBtn {
-  background: transparent;
-  color: white;
-  border: 2px solid white;
-}
-
-.secondaryBtn:hover {
-  background: white;
-  color: #4ECDC4;
-  transform: translateY(-3px);
-}
-
-.btnIcon {
-  font-size: 1.2rem;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .heroTitle {
-    font-size: 3rem;
-  }
-  
-  .titleSub {
-    font-size: 2rem;
-  }
-  
-  .heroStats {
-    flex-direction: column;
-    gap: 20px;
-  }
-  
-  .eventFilter {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 15px;
-  }
-  
-  .servicesGrid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .benefitsGrid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-  
-  .ctaButtons {
-    flex-direction: column;
+.eventButton {
+    background: #f8f8f8;
+    border: 1px solid #ddd;
+    padding: 10px 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
     align-items: center;
-  }
-  
-  .filterTitle,
-  .sectionTitle,
-  .ctaTitle {
-    font-size: 2rem;
-  }
+    gap: 8px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+}
+
+.eventButton:hover {
+    background: #e6f0ef;
+    border-color: #2E75AE;
+    color: #2E75AE;
+}
+
+.active {
+    background: #2E75AE;
+    color: #fff;
+    border-color: #2c7a7b;
+}
+
+
+/* ------------------ SERVICE CARDS ------------------ */
+.cateringList {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    padding: 40px;
+}
+
+.cateringItem {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(12px);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cateringItem:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.cateringImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cateringName {
+    font-size: 1.5rem;
+    margin: 16px;
+    color: #2c3e50;
+}
+
+.cateringDescription {
+    font-size: 1rem;
+    margin: 0 16px 12px 16px;
+    color: #555;
+}
+
+.cateringFeatures {
+    list-style: none;
+    padding: 0 16px 20px 32px;
+    margin: 0;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.cateringFeatures li {
+    margin-bottom: 6px;
+    position: relative;
+}
+
+.cateringFeatures li::before {
+    content: "✔";
+    position: absolute;
+    left: -18px;
+    color: #2c7a7b;
+    font-size: 0.9rem;
 }

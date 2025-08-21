@@ -1,17 +1,20 @@
 import React, { useState } from 'react';
+import { FaBirthdayCake, FaBriefcase, FaHeart, FaGraduationCap, FaGift } from 'react-icons/fa';
+// import { GiWeddingDress } from 'react-icons/gi';
+import { MdCelebration } from 'react-icons/md';
 import styles from './Catering.module.css';
 
 const Catering = () => {
     const [selectedEvent, setSelectedEvent] = useState('all');
 
     const eventTypes = [
-        { id: 'all', name: 'All Events', icon: '🎉' },
-        { id: 'birthday', name: 'Birthday Parties', icon: '🎂' },
-        { id: 'corporate', name: 'Corporate Events', icon: '💼' },
-        { id: 'wedding', name: 'Weddings', icon: '💒' },
-        { id: 'anniversary', name: 'Anniversaries', icon: '💕' },
-        { id: 'graduation', name: 'Graduations', icon: '🎓' },
-        { id: 'holiday', name: 'Holiday Celebrations', icon: '🎊' }
+        { id: 'all', name: 'All Events', icon: <MdCelebration /> },
+        { id: 'birthday', name: 'Birthday Parties', icon: <FaBirthdayCake /> },
+        { id: 'corporate', name: 'Corporate Events', icon: <FaBriefcase /> },
+        { id: 'wedding', name: 'Weddings', icon: <FaBriefcase /> },
+        { id: 'anniversary', name: 'Anniversaries', icon: <FaHeart /> },
+        { id: 'graduation', name: 'Graduations', icon: <FaGraduationCap /> },
+        { id: 'holiday', name: 'Holiday Celebrations', icon: <FaGift /> }
     ];
 
     const cateringServices = [
@@ -45,7 +48,7 @@ const Catering = () => {
             category: 'anniversary',
             description: 'Romantic anniversary dinner with special Greek cuisine arrangements',
             features: ['Romantic setup', 'Special menu options', 'Candlelight service', 'Personalized touches'],
-            image: 'https://images.unsplash.com/photo-1515378799626-85cda6e3f3a4?w=800',
+            image: 'https://images.unsplash.com/photo-1530062845289-9109b2c9c868?w=800',
         },
         {
             id: 5,
@@ -53,7 +56,7 @@ const Catering = () => {
             category: 'graduation',
             description: 'Celebrate academic achievements with delicious Greek food and festive atmosphere',
             features: ['Graduation-themed decorations', 'Variety of appetizers', 'Beverage service', 'Party coordination'],
-            image: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=800',
+            image: 'https://images.unsplash.com/photo-1530062845289-9109b2c9c868?w=800',
         },
         {
             id: 6,
@@ -61,16 +64,57 @@ const Catering = () => {
             category: 'holiday',
             description: 'Special holiday menus featuring traditional Greek holiday dishes',
             features: ['Holiday-themed menu', 'Seasonal decorations', 'Family-style service', 'Traditional recipes'],
-            image: 'https://images.unsplash.com/photo-1543353071-86a7f3f3f3a4?w=800',
+            image: 'https://images.unsplash.com/photo-1530062845289-9109b2c9c868?w=800',
         }
     ];
 
-
     return (
-       <div>
-        0
-       </div>
+        <div>
+            {/* Hero Section with Background Video */}
+            <div className={styles.heroSection}>
+                <video autoPlay loop muted playsInline className={styles.heroVideo}>
+                    <source src="/catervideo.mp4" type="video/mp4" />
+                </video>
+                <div className={styles.heroOverlay}>
+                    <h1 className={styles.heroTitle}>Crafting Memorable Experiences</h1>
+                    <p className={styles.heroSubtitle}>
+                        From intimate home gatherings to grand corporate events, we bring exceptional flavors and impeccable service to your table.
+                    </p>
+                    <button className={styles.heroButton}>Contact</button>
+                </div>
+            </div>
 
+            {/* Event Filter */}
+            <div className={styles.eventFilter}>
+                {eventTypes.map(event => (
+                    <button
+                        key={event.id}
+                        className={`${styles.eventButton} ${selectedEvent === event.id ? styles.active : ''}`}
+                        onClick={() => setSelectedEvent(event.id)}
+                    >
+                        {event.icon} {event.name}
+                    </button>
+                ))}
+            </div>
+
+            {/* Service Cards */}
+            <div className={styles.cateringList}>
+                {cateringServices
+                    .filter(service => selectedEvent === 'all' || service.category === selectedEvent)
+                    .map(service => (
+                        <div key={service.id} className={styles.cateringItem}>
+                            <img src={service.image} alt={service.name} className={styles.cateringImage} />
+                            <h2 className={styles.cateringName}>{service.name}</h2>
+                            <p className={styles.cateringDescription}>{service.description}</p>
+                            <ul className={styles.cateringFeatures}>
+                                {service.features.map((feature, index) => (
+                                    <li key={index}>{feature}</li>
+                                ))}
+                            </ul>
+                        </div>
+                    ))}
+            </div>
+        </div>
     );
 };
 
