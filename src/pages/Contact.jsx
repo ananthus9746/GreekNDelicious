@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaInstagram, FaFacebookF, FaPinterestP, FaLinkedinIn } from 'react-icons/fa';
 import styles from './Contact.module.css';
 
 const Contact = () => {
@@ -23,7 +24,6 @@ const Contact = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
-        // Simulate form submission
         setTimeout(() => {
             setIsSubmitting(false);
             alert('Thank you for your message! We will get back to you soon.');
@@ -45,6 +45,7 @@ const Contact = () => {
             </div>
 
             <div className={styles.contactContainer}>
+                {/* Left Section */}
                 <div className={styles.contactInfo}>
                     <div className={styles.infoSection}>
                         <h2>Get In Touch</h2>
@@ -53,7 +54,7 @@ const Contact = () => {
 
                     <div className={styles.contactDetails}>
                         <div className={styles.contactItem}>
-                            <div className={styles.contactIcon}>📞</div>
+                            <div className={styles.contactIcon}><FaPhoneAlt /></div>
                             <div className={styles.contactText}>
                                 <h3>Phone</h3>
                                 <p>+971 050 804 7749</p>
@@ -61,7 +62,7 @@ const Contact = () => {
                         </div>
 
                         <div className={styles.contactItem}>
-                            <div className={styles.contactIcon}>✉️</div>
+                            <div className={styles.contactIcon}><FaEnvelope /></div>
                             <div className={styles.contactText}>
                                 <h3>Email</h3>
                                 <p>info@greekndeliciuos.ae</p>
@@ -69,7 +70,7 @@ const Contact = () => {
                         </div>
 
                         <div className={styles.contactItem}>
-                            <div className={styles.contactIcon}>📍</div>
+                            <div className={styles.contactIcon}><FaMapMarkerAlt /></div>
                             <div className={styles.contactText}>
                                 <h3>Address</h3>
                                 <p>Saba Tower 1 - Shop S07-Cluster E<br />Jumeirah Lake Towers - Dubai</p>
@@ -77,10 +78,10 @@ const Contact = () => {
                         </div>
 
                         <div className={styles.contactItem}>
-                            <div className={styles.contactIcon}>🕒</div>
+                            <div className={styles.contactIcon}><FaClock /></div>
                             <div className={styles.contactText}>
                                 <h3>Opening Hours</h3>
-                                <p>Monday to Sunday<br />From 9 am to 10 pm<br />Open everyday</p>
+                                <p>Monday to Sunday<br />9 am – 10 pm<br />Open everyday</p>
                             </div>
                         </div>
                     </div>
@@ -88,14 +89,15 @@ const Contact = () => {
                     <div className={styles.socialSection}>
                         <h3>Follow Us</h3>
                         <div className={styles.socialLinks}>
-                            <a href="#" className={styles.socialLink}>Instagram</a>
-                            <a href="#" className={styles.socialLink}>Facebook</a>
-                            <a href="#" className={styles.socialLink}>Pinterest</a>
-                            <a href="#" className={styles.socialLink}>LinkedIn</a>
+                            <a href="#" className={styles.socialLink}><FaInstagram /></a>
+                            <a href="#" className={styles.socialLink}><FaFacebookF /></a>
+                            <a href="#" className={styles.socialLink}><FaPinterestP /></a>
+                            <a href="#" className={styles.socialLink}><FaLinkedinIn /></a>
                         </div>
                     </div>
                 </div>
 
+                {/* Right Section - Form */}
                 <div className={styles.contactForm}>
                     <h2>Send us a Message</h2>
                     <form onSubmit={handleSubmit}>
@@ -172,6 +174,7 @@ const Contact = () => {
                 </div>
             </div>
 
+            {/* FAQ */}
             <div className={styles.faqSection}>
                 <div className={styles.faqContainer}>
                     <h2>Frequently Asked Questions</h2>
@@ -193,7 +196,7 @@ const Contact = () => {
                             <p>We are open Monday to Sunday from 9 am to 10 pm, every day of the week.</p>
                         </div>
                         <div className={styles.faqItem}>
-                            <h3>Are you meat halal?</h3>
+                            <h3>Are your meats halal?</h3>
                             <p>Yes, all our meat is halal certified and prepared according to Islamic dietary guidelines.</p>
                         </div>
                         <div className={styles.faqItem}>

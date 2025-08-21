@@ -64,8 +64,9 @@
 }
 
 .contactIcon {
-    font-size: 2rem;
-    min-width: 50px;
+    font-size: 1.8rem;
+    color: #004a99;
+    min-width: 40px;
     text-align: center;
 }
 
@@ -82,6 +83,7 @@
     margin: 0;
 }
 
+/* --- Social Links --- */
 .socialSection h3 {
     color: #004a99;
     font-size: 1.5rem;
@@ -96,21 +98,28 @@
 }
 
 .socialLink {
-    color: #004a99;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.8rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
     border: 2px solid #004a99;
-    border-radius: 25px;
+    background: white;
+    color: #004a99;
+    font-size: 1.3rem;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 .socialLink:hover {
     background: #004a99;
     color: white;
-    transform: translateY(-2px);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 74, 153, 0.3);
 }
 
+/* --- Contact Form --- */
 .contactForm {
     background: white;
     padding: 2rem;
@@ -181,7 +190,7 @@
 }
 
 .submitBtn:hover:not(:disabled) {
-    background: #004a99;
+    background: #00336e;
     transform: translateY(-2px);
 }
 
@@ -190,6 +199,7 @@
     cursor: not-allowed;
 }
 
+/* --- FAQ --- */
 .faqSection {
     padding: 4rem 2rem;
     background: #f8f9fa;
@@ -239,6 +249,7 @@
     margin: 0;
 }
 
+/* --- Responsive --- */
 @media (max-width: 768px) {
     .contactHeader h1 {
         font-size: 2.5rem;
