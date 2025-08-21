@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaBirthdayCake, FaBriefcase, FaHeart, FaGraduationCap, FaGift } from 'react-icons/fa';
 import { MdCelebration } from 'react-icons/md';
 import styles from './Catering.module.css';
@@ -173,6 +173,9 @@ const Catering = () => {
         selectedEvent === 'all' || service.category === selectedEvent
     );
 
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div>
             {/* Hero Section with Background Video */}

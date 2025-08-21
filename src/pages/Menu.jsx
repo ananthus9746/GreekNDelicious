@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import styles from './Menu.module.css';
 import menu1 from '../assets/menuimage/Greek n Delicious menu final_page-0002.jpg'
 import menu2 from '../assets/menuimage/Greek n Delicious menu final_page-0003.jpg'
@@ -7,6 +7,9 @@ import menu4 from '../assets/menuimage/Greek n Delicious menu final_page-0005.jp
 import menu5 from '../assets/menuimage/Greek n Delicious menu final_page-0006.jpg'
 
 function Menu() {
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
     return (
         <div className={styles.menuWrapper}>
             <div className={styles.menuHeader}>

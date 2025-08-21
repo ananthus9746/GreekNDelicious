@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaPhoneAlt, FaEnvelope, FaMapMarkerAlt, FaClock, FaInstagram, FaFacebookF, FaPinterestP, FaLinkedinIn } from 'react-icons/fa';
 import styles from './Contact.module.css';
 
@@ -36,6 +36,9 @@ const Contact = () => {
             });
         }, 1000);
     };
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className={styles.contact}>
