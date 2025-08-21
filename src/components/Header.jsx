@@ -1,13 +1,16 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import styles from './Header.module.css';
 
 const Header = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const location = useLocation();
 
     const toggleMenu = () => {
         setIsMenuOpen(!isMenuOpen);
     };
+
+    const isActiveLink = (path) => location.pathname === path;
 
     return (
         <header className={styles.header}>
@@ -15,16 +18,44 @@ const Header = () => {
                 <div className={styles.logo}>
                     <div className={styles.logoText}>
                         <h1>Greek</h1>
-                        <h2>n Delicious</h2>
+                        <h2>n'Delicious</h2>
                     </div>
                 </div>
 
                 <nav className={`${styles.nav} ${isMenuOpen ? styles.navOpen : ''}`}>
                     <ul className={styles.navList}>
-                        <li><NavLink to="/" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>Home</NavLink></li>
-                        <li><NavLink to="/menu" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>Menu</NavLink></li>
-                        <li><NavLink to="/catering" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>Catering</NavLink></li>
-                        <li><NavLink to="/contact" className={({ isActive }) => isActive ? `${styles.navLink} ${styles.active}` : styles.navLink}>Contact</NavLink></li>
+                        <li>
+                            <NavLink
+                                to="/"
+                                className={`${styles.navLink} ${isActiveLink("/") ? styles.active : ""}`}
+                            >
+                                Home
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/menu"
+                                className={`${styles.navLink} ${isActiveLink("/menu") ? styles.active : ""}`}
+                            >
+                                Menu
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/catering"
+                                className={`${styles.navLink} ${isActiveLink("/catering") ? styles.active : ""}`}
+                            >
+                                Catering
+                            </NavLink>
+                        </li>
+                        <li>
+                            <NavLink
+                                to="/contact"
+                                className={`${styles.navLink} ${isActiveLink("/contact") ? styles.active : ""}`}
+                            >
+                                Contact
+                            </NavLink>
+                        </li>
                     </ul>
                 </nav>
 

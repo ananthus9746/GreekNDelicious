@@ -223,6 +223,18 @@
     animation: float 4s ease-in-out infinite;
 }
 
+.active {
+    color: #e53e8e;
+    transform: translateY(-2px);
+}
+
+.active::before {
+    width: 100%;
+}
+
+.active::after {
+    transform: translateX(-50%) scale(1);
+}
 /* Animations */
 @keyframes slideDown {
     from {

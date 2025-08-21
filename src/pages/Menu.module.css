@@ -30,7 +30,7 @@ height: 350px;
 
 
 .menuTitle {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: rgb(231, 231, 231);
     font-family: "Boldonse", system-ui;
         font-weight: 400;
@@ -44,8 +44,7 @@ height: 350px;
 }
 
 .menuButton {
-    background: rgb(247, 217, 95);
-    border: 2px solid rgba(248, 218, 97, 0.664);
+    border: 2px solid rgba(248, 218, 97, 0);
     color: white;
     padding: 15px 30px;
     border-radius: 50px;
@@ -57,6 +56,11 @@ height: 350px;
     font-family: inherit;
     font-weight: 600;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+
+
+    background: #2E75AE;
+        color: #fff;
+      
 }
 
 

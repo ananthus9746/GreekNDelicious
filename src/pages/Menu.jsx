@@ -14,7 +14,7 @@ function Menu() {
             </div>
 
             <div className={styles.buttonContainer}>
-                <button className={styles.menuButton}>Download/View Menu</button>
+                <button className={styles.menuButton}>Download / View Menu</button>
             </div>
 
             <div className={styles.menuContainer}>

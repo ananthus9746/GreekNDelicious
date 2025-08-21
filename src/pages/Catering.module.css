@@ -28,9 +28,16 @@
 }
 
 .heroTitle {
-    font-size: 3.4rem;
+    font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
+
+
+    color: rgb(231, 231, 231);
+        font-family: "Boldonse", system-ui;
+        font-weight: 400;
+
+    text-transform: uppercase;
 }
 
 .heroSubtitle {
