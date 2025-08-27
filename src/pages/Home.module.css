@@ -7,52 +7,19 @@
     font-family: 'Arial Black', Arial, sans-serif;
 }
 
-/* Navigation */
-.navbar {
+/* Hero Section */
+.heroSection {
     background-color: #3e78ca;
-    padding: 1rem 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    color: white;
+    position: relative;
+    overflow: hidden;
+
 }
 
-.navContainer {
-    margin: 0 auto;
+.herobtn {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 2rem;
-    max-width: 1400px;
+    justify-content: flex-end;
 }
-
-.logo {
-    color: white;
-    font-size: 1.3rem;
-    font-weight: 900;
-}
-
-.logoText {
-    color: white;
-
-}
-
-.navLinks {
-    display: flex;
-    gap: 2rem;
-}
-
-.navLinks a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 0.9rem;
-    transition: opacity 0.3s ease;
-}
-
-.navLinks a:hover {
-    opacity: 0.8;
-}
-
 .orderButton {
     background-color: white;
     color: #2E75AE;
@@ -67,27 +34,9 @@
     text-transform: uppercase;
 
 
-    
-}
-
-.orderButton:hover {
-    transform: scale(1.05);
-}
-
-/* Hero Section */
-.heroSection {
-    background-color: #3e78ca;
-    color: white;
-    position: relative;
-    overflow: hidden;
 
 }
-
-.herobtn {
-    display: flex;
-    justify-content: flex-end;
-}
-.port{
+.port {
     position: absolute;
     top: 10px;
     right: 35%;
@@ -260,7 +209,8 @@
     color: white;
     position: relative;
 }
-.flower{
+
+.flower {
     position: absolute;
     bottom: 50px;
     left: 30%;
@@ -271,14 +221,14 @@
 }
 
 .restaurantContainer {
-  
+
     display: flex;
-   
+
 }
 
 .restaurantContent {
     width: 50%;
-        padding: 6rem 3rem;
+    padding: 6rem 3rem;
 }
 
 .restaurantTitle {
@@ -306,20 +256,20 @@
 }
 
 .restaurantButton {
- 
+
     background-color: white;
-        color: #3e78ca;
-            border: none;
-            padding: 1.5rem 3rem;
-            font-weight: bold;
-            font-size: 1.2rem;
-            border-radius: 50px;
-            cursor: pointer;
-            transition: transform 0.2s ease;
-            box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
-            position: relative;
-            z-index: 1;
-            text-transform: uppercase;
+    color: #3e78ca;
+    border: none;
+    padding: 1.5rem 3rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
+    position: relative;
+    z-index: 1;
+    text-transform: uppercase;
 }
 
 .restaurantButton:hover {
@@ -333,7 +283,7 @@
 }
 
 .restaurantImage img {
-  
+
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -367,7 +317,7 @@
     position: relative;
 }
 
-.leaf{
+.leaf {
     position: absolute;
     top: 120px;
     right: 10px;
@@ -375,18 +325,20 @@
     opacity: 0.8;
     z-index: 1;
     transform: rotate(20deg);
-    
+
 }
+
 /* Quote Section Styles */
 
 .quoteSection {
     background-color: #ebf4fb;
     display: flex;
-align-items: center;
+    align-items: center;
     justify-content: center;
 
 }
-.quoteContainer{
+
+.quoteContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -395,14 +347,14 @@ align-items: center;
 
 /* Quote Text */
 .quote {
-  
+
     font-size: 6rem;
     font-weight: 800;
     text-transform: uppercase;
     color: #3e78ca;
     line-height: 1.1;
     margin-bottom: 0.5rem;
-    
+
 }
 
 .quoteAuthor {
@@ -445,18 +397,18 @@ align-items: center;
 
 /* Button */
 .storyButton {
-    background-color:#3e78ca;
-        color: #ffffff;
-        border: none;
-        padding: 1.2rem 2.5rem;
-        font-weight: bold;
-        font-size: 1rem;
-        border-radius: 50px;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-        box-shadow: -8px 7px 0px 2px rgb(0, 0, 0);
-        width: 300PX;
-        margin: auto;
+    background-color: #3e78ca;
+    color: #ffffff;
+    border: none;
+    padding: 1.2rem 2.5rem;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: -8px 7px 0px 2px rgb(0, 0, 0);
+    width: 300PX;
+    margin: auto;
 }
 
 
@@ -479,6 +431,7 @@ align-items: center;
         align-self: center;
     }
 }
+
 /* Footer */
 .footer {
     background-color: #3e78ca;
@@ -689,5 +642,3 @@ align-items: center;
         display: none;
     }
 }
-
-

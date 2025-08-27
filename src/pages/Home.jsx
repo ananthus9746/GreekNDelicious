@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import styles from './Home.module.css';
 
 const Home = () => {
@@ -6,24 +7,13 @@ const Home = () => {
         window.scrollTo(0, 0);
     }, []);
 
+    const isActiveLink = (path) => {
+        return window.location.pathname === path;
+    };
+
     return (
         <div className={styles.pageContainer}>
-            {/* Navigation */}
-            <nav className={styles.navbar}>
-                <div className={styles.navContainer}>
-                    <div className={styles.logo}>
-                        <span className={styles.logoText}>GREEK'N DELICIOUS</span>
-                    </div>
-                    <div className={styles.navLinks}>
-                        <a href="#menu">MENU</a>
-                        <a href="#about">ABOUT</a>
-                        <a href="#locations">LOCATIONS</a>
-                        <a href="#story">STORY</a>
-                        <a href="#contact">CONTACT</a>
-                    </div>
-                    <button className={styles.orderButton}>ORDER ONLINE</button>
-                </div>
-            </nav>
+           
 
             {/* Hero Section */}
             <section className={styles.heroSection}>
