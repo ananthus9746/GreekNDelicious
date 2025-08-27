@@ -14,6 +14,7 @@ function Menu() {
         <div className={styles.menuWrapper}>
             <div className={styles.menuHeader}>
                 <h1 className={styles.menuTitle}>OUR MENU</h1>
+                <p className={styles.menuDescription}>Discover our authentic Greek cuisine, from traditional appetizers to delicious main courses</p>
             </div>
 
             <div className={styles.buttonContainer}>

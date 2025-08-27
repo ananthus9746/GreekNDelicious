@@ -1,39 +1,45 @@
-/* Menu.module.css */
-
-.menuWrapper {
-    /* background: linear-gradient(135deg, #2c5f5f 0%, #1a4040 50%, #0f2828 100%); */
-    /* min-height: 100vh; */
-
- 
-}
-
-
 .menuHeader {
     text-align: center;
 
-height: 350px;
-    background-image: url('../assets/menuimage/Greek n Delicious menu final_page-0001.jpg');
+    height: 350px;
+    background-image: url('https://images.unsplash.com/photo-1573225342350-16731dd9bf3d?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
 
-    background-color: rgba(0, 0, 0, 0.607);
+    background-color: rgba(123, 131, 143, 0.724);
     background-blend-mode: darken;
 
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    margin-top: 40px;
-    
+        font-family: 'Arial Black', Arial, sans-serif;
+
+
+}
+
+.menuWrapper {
+    background-color: #ebf4fb;
 }
 
 
 
-
 .menuTitle {
-    font-size: 2.5rem;
-    color: rgb(231, 231, 231);
-    font-family: "Boldonse", system-ui;
-        font-weight: 400;
+    font-size: 4.5rem;
+    color: #ffffff;
+    font-weight: 400;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.menuDescription {
+    font-size: 1.5rem;
+    color: #e7f1fe;
+    max-width: 800px;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 300;
+    line-height: 1.4;
 }
 
 .buttonContainer {
@@ -44,25 +50,25 @@ height: 350px;
 }
 
 .menuButton {
-    border: 2px solid rgba(248, 218, 97, 0);
-    color: white;
-    padding: 15px 30px;
-    border-radius: 50px;
-    font-size: 1rem;
-    letter-spacing: 1px;
+
+
+
+
+    background: #3789cc;
+    color: #fff;
+    border: none;
+    padding: 1.2rem 2rem;
+    font-weight: bold;
+    border-radius: 125px;
     cursor: pointer;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    font-family: inherit;
-    font-weight: 600;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+    box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: 'Arial Black', Arial, sans-serif;
 
-
-    background: #2E75AE;
-        color: #fff;
-      
 }
-
 
 .menuContainer {
     display: flex;

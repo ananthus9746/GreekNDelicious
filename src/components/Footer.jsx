@@ -4,44 +4,34 @@ import styles from './Footer.module.css';
 const Footer = () => {
     return (
         <footer className={styles.footer}>
-            <div className={styles.footerContainer}>
-                <div className={styles.footerContent}>
-                    <div className={styles.footerSection}>
-                        <h3>Greek & Delicious</h3>
-                        <p>Experience the true essence of authentic Greek cuisine</p>
-                        <p>Ζήστε την πραγματική ουσία της αυθεντικής ελληνικής κουζίνας</p>
-                    </div>
-
-                    <div className={styles.footerSection}>
-                        <h4>Contact Info</h4>
-                        <p>Phone: +971 050 804 7749</p>
-                        <p>Email: info@greekndeliciuos.ae</p>
-                        <p>Address: Saba Tower 1 - Shop S07-Cluster E - Jumeirah Lake Towers - Dubai</p>
-                    </div>
-
-                    <div className={styles.footerSection}>
-                        <h4>Opening Hours</h4>
-                        <p>Monday to Sunday</p>
-                        <p>From 9 am to 10 pm</p>
-                        <p>Open everyday</p>
-                    </div>
-
-                    <div className={styles.footerSection}>
-                        <h4>Follow Us</h4>
-                        <div className={styles.socialLinks}>
-                            <a href="#" className={styles.socialLink}>Instagram</a>
-                            <a href="#" className={styles.socialLink}>Facebook</a>
-                            <a href="#" className={styles.socialLink}>Pinterest</a>
-                            <a href="#" className={styles.socialLink}>LinkedIn</a>
+                        <div className={styles.footerContainer}>
+                            <div className={styles.footerSection}>
+                                <h3>VISIT US</h3>
+                                <p>Saba Tower 1 - Shop S07<br />Cluster E - JLT, Dubai<br />+971 050 804 7749</p>
+                                <p>Mon-Sun<br />9am - 10pm</p>
+                            </div>
+                            <div className={styles.footerSection}>
+                                <h3>OUR STORY</h3>
+                                <p>Bringing the authentic taste of Greece to Dubai.
+                                    Fresh, homemade, and always delicious.</p>
+                            </div>
+                            <div className={styles.footerSection}>
+                                <h3>ORDER ONLINE</h3>
+                                <p>Enjoy our Greek specials<br />from the comfort of your home.</p>
+                            </div>
+                            <div className={styles.footerSection}>
+                                <h3>CONTACT US</h3>
+                                <p>Email<br />info@greekndelicious.ae</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-
-                <div className={styles.footerBottom}>
-                    <p>&copy; 2025 by Greek and Delicious / UAE</p>
-                </div>
-            </div>
-        </footer>
+                        <div className={styles.footerBottom}>
+                            <div className={styles.footerLinks}>
+                                <span>FOLLOW US ON INSTAGRAM @greekanddelicious</span>
+                                <span>FOLLOW US ON INSTAGRAM @greekanddelicious</span>
+                                <span>FOLLOW US ON INSTAGRAM @greekanddelicious</span>
+                            </div>
+                        </div>
+                    </footer>
     );
 };
 
