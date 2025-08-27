@@ -12,7 +12,7 @@ const Home = () => {
             <nav className={styles.navbar}>
                 <div className={styles.navContainer}>
                     <div className={styles.logo}>
-                        <span className={styles.logoText}>GREEK'N DELICIOUS</span>
+                        <span className={styles.logoText}>GREEN'N DELICIOUS</span>
                     </div>
                     <div className={styles.navLinks}>
                         <a href="#menu">MENU</a>
@@ -25,38 +25,42 @@ const Home = () => {
                 </div>
             </nav>
 
+
             {/* Hero Section */}
             <section className={styles.heroSection}>
                 <img className={styles.port} src={'/port.png'} />
                 <div className={styles.heroContent}>
                     <div className={styles.heroText}>
                         <h1 className={styles.heroTitle}>
-                            EAT LIKE GREEK ALWAYS FRESH, ALWAYS DELICIOUS
+                            SAUCE MADE<br />
+                            WITH LOVE IN<br />
+                            KANSAS CITY
                         </h1>
-                        <p className={styles.heroSubtitle}>Authentic Greek Cuisine in Dubai</p>
+                        <p className={styles.heroSubtitle}>SINCE 1970... SOMETHING.</p>
                         <div className={styles.herobtn}>
                             <button className={styles.orderButton}>View our menu</button>
+
                         </div>
+
                     </div>
 
                     <div className={styles.heroImageContainer}>
                         <img
                             src="https://images.unsplash.com/photo-1666819476544-38ea4e57a3d0?q=80&w=1020&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Greek Gyros"
+                            alt="BBQ wings"
                             className={styles.heroImage}
                         />
                     </div>
+
                 </div>
 
                 <img className={styles.greekimage} src={'/greek.png'} />
             </section>
-
             <div className={styles.marque}>
                 <div className={styles.marqueContent}>
-                    <span>🔥 GREEK’N DELICIOUS 🔥 UAE BEST GYROS 🔥 ALWAYS FRESH 🔥 AUTHENTIC GREEK TASTE 🔥</span>
+                    <span>🔥 GREE'NDELICIOUS 🔥 BRING THE HEAT HOME 🔥 BBQ SAUCE COMING IN HOT 🔥 MADE FROM SCRATCH DAILY</span>
                 </div>
             </div>
-
             {/* Products Section */}
             <section className={styles.productsSection}>
                 <div className={styles.productsContainer}>
@@ -64,36 +68,49 @@ const Home = () => {
                         <div className={styles.productImage}>
                             <img
                                 src="https://images.unsplash.com/photo-1702823391625-f5600fbe8a14?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                                alt="Greek Salad"
+                                alt="Jones BBQ Sauce bottle"
                             />
                         </div>
                     </div>
                     <div className={styles.productRight}>
                         <h2 className={styles.productTitle}>
-                            EXPERIENCE TH
-                            ESSENCE OF
-                            GREEK CUISINE
+                            THE MAGIC OF<br />
+                            JONES BBQ IN<br />
+                            YOUR HOME
                         </h2>
                         <p className={styles.productDescription}>
-                            At Greek’n Delicious, we bring you authentic Greek flavors made fresh daily.
-                            From gyros and souvlaki to salads and homemade sauces,
-                            every dish is prepared with love — just like in Greece.
+                            The Jones family has made their sauce from scratch daily for
+                            over 50 years. For the first time ever, you can bring that
+                            authentic Kansas City flavor home with you.
                         </p>
                         <button className={styles.productButton}>View our menu</button>
                     </div>
                 </div>
+
                 <img className={styles.greek2} src='hand.png' />
             </section>
 
-            {/* Events Section */}
+            {/* Featured In Section */}
             <section className={styles.featuredSection}>
                 <div className={styles.featuredLogos}>
-                    <div className={styles.cateringEvent}><span>Birthday Parties</span></div>
-                    <div className={styles.cateringEvent}><span>Weddings Parties</span></div>
-                    <div className={styles.cateringEvent}><span>Corporate Events</span></div>
-                    <div className={styles.cateringEvent}><span>Graduations Parties</span></div>
-                    <div className={styles.cateringEvent}><span>Family Reunions</span></div>
-                    <div className={styles.cateringEvent}><span>Private Parties</span></div>
+                    <div className={styles.cateringEvent}>
+                        <span>Birthday Parties</span>
+                    </div>
+                    <div className={styles.cateringEvent}>
+                        <span>Weddings Parties</span>
+                    </div>
+                    <div className={styles.cateringEvent}>
+                        <span>Corporate Events</span>
+                    </div>
+                    <div className={styles.cateringEvent}>
+                        <span>Graduations Parties</span>
+                    </div>
+                    <div className={styles.cateringEvent}>
+                        <span>Family Reunions</span>
+                    </div>
+                    <div className={styles.cateringEvent}>
+                        <span>Private Parties</span>
+                    </div>
                 </div>
             </section>
 
@@ -102,25 +119,24 @@ const Home = () => {
                 <div className={styles.restaurantContainer}>
                     <div className={styles.restaurantContent}>
                         <h2 className={styles.restaurantTitle}>
-                            VISIT OUR<br />
+                            STOP BY OUR<br />
                             RESTAURANT
                         </h2>
                         <p className={styles.restaurantDescription}>
-                            Located in the heart of JLT Dubai, Greek’n Delicious
-                            serves traditional Greek food made with fresh ingredients.
-                            Come taste the flavors of Greece — right here in the UAE.
+                            From housemade sausages to racks of ribs, we love to feed our Kansas City<br />
+                            community. So come join the party... and come hungry!
                         </p>
                         <div className={styles.restaurantHours}>
-                            <p>Saba Tower 1 - Shop S07 - Cluster E</p>
-                            <p>Jumeirah Lake Towers - Dubai</p>
-                            <p>Open everyday: 9am - 10pm</p>
+                            <p>Restaurant open 10:45am - 3pm or sellout</p>
+                            <p>Tuesday through Saturday each week</p>
+                            <p>No online orders or call-ins available</p>
                         </div>
                         <button className={styles.restaurantButton}>View Our Menu</button>
                     </div>
                     <div className={styles.restaurantImage}>
                         <img
                             src="https://images.unsplash.com/photo-1715194288597-cd4df523776e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                            alt="Greek Dishes"
+                            alt="BBQ ribs platter"
                         />
                     </div>
                 </div>
@@ -129,77 +145,79 @@ const Home = () => {
 
             <div className={styles.marque}>
                 <div className={styles.marqueContent}>
-                    <span>🔥 GREEK’N DELICIOUS 🔥 UAE BEST GYROS 🔥 ALWAYS FRESH 🔥 AUTHENTIC GREEK TASTE 🔥</span>
+                    <span>🔥 GREE'NDELICIOUS 🔥 BRING THE HEAT HOME 🔥 BBQ SAUCE COMING IN HOT 🔥 MADE FROM SCRATCH DAILY</span>
                 </div>
             </div>
-
+       
             {/* Quote Section */}
             <section className={styles.quoteSection}>
                 <div className={styles.quoteContainer}>
                     <h2 className={styles.quote}>
-                        "GRAB IT
-                        ENJOY IT<br />
-                        OWN IT
-                        LOVE IT"
-
+                        "THE BEST ATTITUDE<br />
+                        IS GRATITUDE"
                     </h2>
-                    <p className={styles.quoteAuthor}>— GREEK’N DELICIOUS</p>
+                    <p className={styles.quoteAuthor}>— GREEK'N DELICIOUS</p>
 
                     <div className={styles.imagecontainer}>
-                        <img src="https://images.unsplash.com/photo-1734974121561-11aee7d3cebd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                        <img src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2a389?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                        <img src="https://images.unsplash.com/photo-1633321702518-7feccafb94d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
-                        <img src="https://images.unsplash.com/photo-1672491017291-ae6ba870c965?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+                        <img
+                            src="https://images.unsplash.com/photo-1734974121561-11aee7d3cebd?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        />
+
+                        <img
+                            src="https://images.unsplash.com/photo-1523986371872-9d3ba2e2a389?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        />
+
+                        <img
+                            src="https://images.unsplash.com/photo-1633321702518-7feccafb94d5?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        />
+
+
+                        <img
+                            src="https://images.unsplash.com/photo-1672491017291-ae6ba870c965?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        />
                     </div>
 
                     <div className={styles.sistersStory}>
                         <p>
-                            Greek’n Delicious was created to share the true flavors of Greece
-                            with the UAE. Every dish is prepared with passion, inspired by
-                            traditional family recipes passed down through generations.
-
-                            From freshly baked pita and vibrant salads to sizzling grilled meats,
-                            every bite tells a story of authenticity.
-                            We believe food is not just about taste, but about culture, memories,
-                            and moments shared with loved ones.
-
-                            Step into Greek’n Delicious and let us take you on a journey
-                            through the heart of Greece, right here in the UAE.
+                            For sisters Deborah "Lil" and Mary "Shorty" Jones, barbecue is a<br />
+                            way of life. When they were little girls, their father Leroy D. Jones Sr.<br />
+                            would cook up a storm in the backyard for family and friends. In<br />
+                            the 80's they decided to take those backyard gatherings and open<br />
+                            the old restaurant.
                         </p>
-
                         <button className={styles.storyButton}>CONTACT US</button>
                     </div>
                 </div>
                 <img src={'/leaf.png'} className={styles.leaf} />
             </section>
 
+
             {/* Footer */}
             <footer className={styles.footer}>
                 <div className={styles.footerContainer}>
                     <div className={styles.footerSection}>
                         <h3>VISIT US</h3>
-                        <p>Saba Tower 1 - Shop S07<br />Cluster E - JLT, Dubai<br />+971 050 804 7749</p>
-                        <p>Mon-Sun<br />9am - 10pm</p>
+                        <p>6145 Troost Ave<br />Kansas City, MO 64110<br />816-923-4999</p>
+                        <p>Mon-Sun<br />11am-8pm daily</p>
                     </div>
                     <div className={styles.footerSection}>
                         <h3>OUR STORY</h3>
-                        <p>Bringing the authentic taste of Greece to Dubai.
-                            Fresh, homemade, and always delicious.</p>
+                        <p>From backyard gatherings to Kansas<br />City institution, we've been serving<br />authentic BBQ since 1970.</p>
                     </div>
                     <div className={styles.footerSection}>
-                        <h3>ORDER ONLINE</h3>
-                        <p>Enjoy our Greek specials<br />from the comfort of your home.</p>
+                        <h3>SHOP AT HOME</h3>
+                        <p>Bring our<br />award-winning sauces<br />home with you.</p>
                     </div>
                     <div className={styles.footerSection}>
-                        <h3>CONTACT US</h3>
-                        <p>Email<br />info@greekndelicious.ae</p>
+                        <h3>FOR MEDIA INQUIRIES</h3>
+                        <p>General<br />info@jonesbbq.com<br />Press<br />press@jonesbbq.com</p>
                     </div>
                 </div>
                 <div className={styles.footerBottom}>
                     <div className={styles.footerLinks}>
-                        <span>FOLLOW US ON INSTAGRAM @greekanddelicious</span>
-                        <span>FOLLOW US ON INSTAGRAM @greekanddelicious</span>
-                        <span>FOLLOW US ON INSTAGRAM @greekanddelicious</span>
+                        <span>FOLLOW US ON INSTAGRAM @OGJONESBBQ</span>
+                        <span>FOLLOW US ON INSTAGRAM @OGJONESBBQ</span>
+                        <span>FOLLOW US ON INSTAGRAM @OGJONESBBQ</span>
                     </div>
                 </div>
             </footer>
