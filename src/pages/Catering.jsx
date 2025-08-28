@@ -180,7 +180,7 @@ const Catering = () => {
         <div>
             {/* Hero Section with Background Video */}
             <div className={styles.heroSection}>
-                <video autoPlay loop muted playsInline className={styles.heroVideo}>
+                <video autoPlay loop muted playsInline className={styles.heroVideo} loading="lazy">
                     <source src="/catervideo.mp4" type="video/mp4" />
                 </video>
                 <div className={styles.heroOverlay}>
@@ -188,7 +188,7 @@ const Catering = () => {
                     <p className={styles.heroSubtitle}>
                         From intimate home gatherings to grand corporate events, we bring exceptional flavors and impeccable service to your table.
                     </p>
-                    <button className={styles.heroButton}>Contact</button>
+                    <button className={styles.heroButton}>Contact us</button>
                 </div>
             </div>
 
@@ -213,7 +213,7 @@ const Catering = () => {
                             <div className={styles.serviceText}>
                                 <div className={styles.serviceHeader}>
                                     <h2 className={styles.serviceName}>{service.name}</h2>
-                                    <div className={styles.servicePricing}>{service.pricing}</div>
+                                    {/* <div className={styles.servicePricing}>{service.pricing}</div> */}
                                 </div>
 
                                 <p className={styles.serviceDescription}>{service.description}</p>
@@ -248,7 +248,7 @@ const Catering = () => {
                             </div>
 
                             <div className={styles.serviceImage}>
-                                <img src={service.image} alt={service.name} />
+                                <img src={service.image} alt={service.name} loading="lazy" />
                             </div>
                         </div>
                     </section>

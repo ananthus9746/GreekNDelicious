@@ -2,11 +2,12 @@
 .heroSection {
     position: relative;
     width: 100%;
-    height: 900px;
+    height: 700px;
     overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
+            font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .heroVideo {
@@ -28,34 +29,38 @@
 }
 
 .heroTitle {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 1rem;
-
-
-    color: rgb(231, 231, 231);
-        font-family: "Boldonse", system-ui;
+    font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        font-family: 'Arial Black', Arial, sans-serif;
+    
+        color: rgb(231, 231, 231);
         font-weight: 400;
-
-    text-transform: uppercase;
+    
+        text-transform: uppercase;
 }
 
 .heroSubtitle {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     line-height: 1.6;
+    color: #e3eeff;
 }
 
 .heroButton {
-    background: #2E75AE;
+background: #3789cc;
     color: #fff;
-    padding: 12px 48px;
     border: none;
-    border-radius: 30px;
+    padding: 1.2rem 2rem;
+    font-weight: bold;
+    border-radius: 125px;
     cursor: pointer;
-    font-size: 1rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
+    transition: transform 0.2s ease;
+    box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .heroButton:hover {
@@ -84,18 +89,19 @@
     gap: 8px;
     font-size: 0.95rem;
     transition: all 0.3s ease;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .eventButton:hover {
     background: #e6f0ef;
-    border-color: #2E75AE;
-    color: #2E75AE;
+    border-color: #3789cc;
+    color: #3789cc;
 }
 
 .active {
-    background: #2E75AE;
+    background: #3789cc;
     color: #fff;
-    border-color: #2c7a7b;
+    border-color: #3789cc;
 }
 
 /* ------------------ SERVICES CONTAINER ------------------ */
@@ -114,6 +120,7 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.2);
+            font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .serviceContent {
@@ -146,6 +153,15 @@
     margin-bottom: 24px;
     flex-wrap: wrap;
     gap: 16px;
+            font-family: 'Arial Black', Arial, sans-serif;
+}
+.serviceHeader h2 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #2c3e50;
+        font-family: 'Arial Black', Arial, sans-serif;
+
+    font-weight: 700;
 }
 
 .serviceName {
@@ -172,6 +188,7 @@
     line-height: 1.7;
     margin-bottom: 20px;
     font-weight: 500;
+    
 }
 
 .serviceDetailedDescription {

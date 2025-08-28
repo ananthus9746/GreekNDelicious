@@ -1,8 +1,7 @@
 .menuHeader {
     text-align: center;
 
-    height: 350px;
-    background-image: url('https://images.unsplash.com/photo-1573225342350-16731dd9bf3d?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    height: 400px;    background-image: url('https://images.unsplash.com/photo-1573225342350-16731dd9bf3d?q=80&w=1962&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
 
@@ -13,7 +12,7 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 
 
 }
@@ -25,11 +24,15 @@
 
 
 .menuTitle {
-    font-size: 4.5rem;
-    color: #ffffff;
+    font-size: 3.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Arial Black', Arial, sans-serif;
+
+    color: rgb(231, 231, 231);
     font-weight: 400;
-    font-weight: 600;
-    margin-bottom: 15px;
+
+    text-transform: uppercase;
 }
 
 .menuDescription {

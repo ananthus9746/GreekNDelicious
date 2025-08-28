@@ -26,17 +26,18 @@ const Header = () => {
                             Home
                         </NavLink>
                         <NavLink
-                            to="/menu"
-                            className={`${styles.navLink} ${isActiveLink("/menu") ? styles.active : ""}`}
-                        >
-                            Menu
-                        </NavLink>
-                        <NavLink
                             to="/catering"
                             className={`${styles.navLink} ${isActiveLink("/catering") ? styles.active : ""}`}
                         >
                             Catering
                         </NavLink>
+                        <NavLink
+                            to="/menu"
+                            className={`${styles.navLink} ${isActiveLink("/menu") ? styles.active : ""}`}
+                        >
+                            Menu
+                        </NavLink>
+                   
                         <NavLink
                             to="/contact"
                             className={`${styles.navLink} ${isActiveLink("/contact") ? styles.active : ""}`}
@@ -44,7 +45,7 @@ const Header = () => {
                             Contact
                         </NavLink>
                     </div>
-                    <button className={styles.orderButton}>CONTACT US</button>
+                    <button className={styles.orderButton}>MESSAGE US</button>
                 </div>
             </nav>
         </header>

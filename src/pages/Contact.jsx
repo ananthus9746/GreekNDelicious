@@ -45,8 +45,8 @@ const Contact = () => {
             <div className={styles.contactHeader}>
                 <h1>CONTACT US</h1>
                 <p>Get in touch with us for reservations, catering inquiries, or any questions</p>
-                                    <button className={styles.heroButton}>Message Us</button>
-                
+                <button className={styles.heroButton}>Message Us</button>
+
             </div>
 
             <div className={styles.contactContainer}>

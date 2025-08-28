@@ -1,7 +1,3 @@
-.contact {
-    padding-top: 80px;
-    min-height: 100vh;
-}
 
 .contactHeader {
     text-align: center;
@@ -12,24 +8,28 @@
     background-image: url('../assets/chuttersnap-aEnH4hJ_Mrs-unsplash (1).jpg');
     background-size: cover;
     background-position: center;
-    background-color: rgba(0, 0, 0, 0.607);
+    background-color: rgba(0, 0, 0, 0.23);
     background-blend-mode: darken;
+            font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .contactHeader h1 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 700;
-
-    color: rgb(231, 231, 231);
-        font-family: "Boldonse", system-ui;
+    font-size: 3.5rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+        font-family: 'Arial Black', Arial, sans-serif;
+    
+        color: rgb(231, 231, 231);
         font-weight: 400;
-        margin-top: 40px;
+    
+        text-transform: uppercase;
 }
 
 .contactHeader p {
     font-size: 1.3rem;
     opacity: 0.9;
+    max-width: 600px;
+    margin: auto;
 }
 
 .contactContainer {
@@ -41,22 +41,27 @@
     gap: 4rem;
 }
 .heroButton {
-    background: #2E75AE;
+    margin-top: 30PX;
+background: #3789cc;
     color: #fff;
-    padding: 12px 48px;
     border: none;
-    border-radius: 30px;
+    padding: 1.2rem 2rem;
+    font-weight: bold;
+    border-radius: 125px;
     cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
+    position: relative;
+    text-transform: uppercase;
     font-size: 1rem;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    margin-top: 30px;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 .contactInfo h2 {
     color: #004a99;
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 700;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .contactInfo>.infoSection>p {
@@ -64,10 +69,12 @@
     line-height: 1.6;
     margin-bottom: 2rem;
     font-size: 1.1rem;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .contactDetails {
     margin-bottom: 2rem;
+    
 }
 
 .contactItem {
@@ -75,9 +82,8 @@
     align-items: flex-start;
     gap: 1rem;
     margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: #f8f9fa;
     border-radius: 10px;
+    margin-bottom: 60px;
     transition: transform 0.3s ease;
 }
 
@@ -97,6 +103,8 @@
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
+        font-family: 'Arial Black', Arial, sans-serif;
+
 }
 
 .contactText p {
@@ -111,6 +119,7 @@
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .socialLinks {
@@ -146,6 +155,7 @@
     background: white;
     padding: 2rem;
     border-radius: 20px;
+    height: fit-content;
 }
 
 .contactForm h2 {
@@ -154,6 +164,7 @@
     margin-bottom: 2rem;
     font-weight: 700;
     text-align: center;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .formRow {
@@ -173,6 +184,7 @@
     font-weight: 600;
     margin-bottom: 0.5rem;
     font-size: 1rem;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .formGroup input,
@@ -198,20 +210,26 @@
 }
 
 .submitBtn {
-    background: #004a99;
-    color: white;
-    border: none;
-    padding: 1rem 2rem;
-    border-radius: 25px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.3s ease;
+   
     width: 100%;
-    font-size: 1.1rem;
+
+    background: #3789cc;
+        color: #fff;
+        border: none;
+        padding: 1.2rem 2rem;
+        font-weight: bold;
+        border-radius: 125px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
+        position: relative;
+        text-transform: uppercase;
+        font-size: 1rem;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .submitBtn:hover:not(:disabled) {
-    background: #00336e;
+    background: #2062ad;
     transform: translateY(-2px);
 }
 
@@ -237,6 +255,7 @@
     text-align: center;
     margin-bottom: 3rem;
     font-weight: 700;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .faqGrid {
@@ -262,6 +281,7 @@
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
+        font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .faqItem p {
