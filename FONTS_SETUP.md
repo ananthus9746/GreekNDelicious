@@ -143,3 +143,4 @@ public/
 3. Update the Adobe Fonts kit code in `index.html` (if using Minion Pro)
 4. Test the fonts in your application
 5. Customize font usage in your components as needed
+

@@ -1,28 +1,33 @@
+.contact {
+    min-height: 100vh;
+    background: #f8f9fa;
+}
 
 .contactHeader {
     text-align: center;
     padding: 4rem 2rem 2rem;
     color: #ffffff;
-
     height: 400px;
     background-image: url('../assets/chuttersnap-aEnH4hJ_Mrs-unsplash (1).jpg');
     background-size: cover;
     background-position: center;
     background-color: rgba(0, 0, 0, 0.23);
     background-blend-mode: darken;
-            font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contactHeader h1 {
     font-size: 3.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-        font-family: 'Arial Black', Arial, sans-serif;
-    
-        color: rgb(231, 231, 231);
-        font-weight: 400;
-    
-        text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: rgb(231, 231, 231);
+    font-weight: 400;
+    text-transform: uppercase;
 }
 
 .contactHeader p {
@@ -30,6 +35,7 @@
     opacity: 0.9;
     max-width: 600px;
     margin: auto;
+    margin-bottom: 2rem;
 }
 
 .contactContainer {
@@ -40,9 +46,10 @@
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
 }
+
 .heroButton {
-    margin-top: 30PX;
-background: #3789cc;
+    margin-top: 30px;
+    background: #3789cc;
     color: #fff;
     border: none;
     padding: 1.2rem 2rem;
@@ -56,12 +63,17 @@ background: #3789cc;
     font-size: 1rem;
     font-family: 'Arial Black', Arial, sans-serif;
 }
+
+.heroButton:hover {
+    transform: scale(1.05);
+}
+
 .contactInfo h2 {
     color: #004a99;
     font-size: 2rem;
     margin-bottom: 1rem;
     font-weight: 700;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .contactInfo>.infoSection>p {
@@ -69,12 +81,11 @@ background: #3789cc;
     line-height: 1.6;
     margin-bottom: 2rem;
     font-size: 1.1rem;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .contactDetails {
     margin-bottom: 2rem;
-    
 }
 
 .contactItem {
@@ -85,10 +96,12 @@ background: #3789cc;
     border-radius: 10px;
     margin-bottom: 60px;
     transition: transform 0.3s ease;
+    padding: 1rem;
 }
 
 .contactItem:hover {
     transform: translateX(5px);
+    background: rgba(0, 74, 153, 0.05);
 }
 
 .contactIcon {
@@ -103,8 +116,7 @@ background: #3789cc;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
     font-weight: 600;
-        font-family: 'Arial Black', Arial, sans-serif;
-
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .contactText p {
@@ -119,7 +131,7 @@ background: #3789cc;
     font-size: 1.5rem;
     margin-bottom: 1rem;
     font-weight: 600;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .socialLinks {
@@ -156,6 +168,7 @@ background: #3789cc;
     padding: 2rem;
     border-radius: 20px;
     height: fit-content;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .contactForm h2 {
@@ -164,7 +177,7 @@ background: #3789cc;
     margin-bottom: 2rem;
     font-weight: 700;
     text-align: center;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .formRow {
@@ -184,7 +197,7 @@ background: #3789cc;
     font-weight: 600;
     margin-bottom: 0.5rem;
     font-size: 1rem;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .formGroup input,
@@ -202,6 +215,7 @@ background: #3789cc;
 .formGroup textarea:focus {
     outline: none;
     border-color: #004a99;
+    box-shadow: 0 0 0 3px rgba(0, 74, 153, 0.1);
 }
 
 .formGroup textarea {
@@ -210,22 +224,20 @@ background: #3789cc;
 }
 
 .submitBtn {
-   
     width: 100%;
-
     background: #3789cc;
-        color: #fff;
-        border: none;
-        padding: 1.2rem 2rem;
-        font-weight: bold;
-        border-radius: 125px;
-        cursor: pointer;
-        transition: transform 0.2s ease;
-        box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
-        position: relative;
-        text-transform: uppercase;
-        font-size: 1rem;
-        font-family: 'Arial Black', Arial, sans-serif;
+    color: #fff;
+    border: none;
+    padding: 1.2rem 2rem;
+    font-weight: bold;
+    border-radius: 125px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
+    position: relative;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .submitBtn:hover:not(:disabled) {
@@ -255,7 +267,7 @@ background: #3789cc;
     text-align: center;
     margin-bottom: 3rem;
     font-weight: 700;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .faqGrid {
@@ -274,6 +286,7 @@ background: #3789cc;
 
 .faqItem:hover {
     transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
 .faqItem h3 {
@@ -281,7 +294,7 @@ background: #3789cc;
     font-size: 1.3rem;
     margin-bottom: 1rem;
     font-weight: 600;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .faqItem p {
@@ -290,14 +303,58 @@ background: #3789cc;
     margin: 0;
 }
 
-/* --- Responsive --- */
+/* --- Responsive Design --- */
+@media (max-width: 1200px) {
+    .contactContainer {
+        gap: 3rem;
+        padding: 2.5rem 1.5rem;
+    }
+
+    .faqGrid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width: 1024px) {
+    .contactHeader h1 {
+        font-size: 3rem;
+    }
+
+    .contactHeader p {
+        font-size: 1.1rem;
+    }
+
+    .contactContainer {
+        gap: 2.5rem;
+    }
+
+    .contactForm {
+        padding: 1.5rem;
+    }
+
+    .faqContainer h2 {
+        font-size: 2.2rem;
+    }
+}
+
 @media (max-width: 768px) {
+    .contactHeader {
+        padding: 3rem 1rem 2rem;
+        height: 350px;
+    }
+
     .contactHeader h1 {
         font-size: 2.5rem;
     }
 
-    .contactHeader {
-        padding: 3rem 1rem 2rem;
+    .contactHeader p {
+        font-size: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .heroButton {
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
     }
 
     .contactContainer {
@@ -306,8 +363,59 @@ background: #3789cc;
         padding: 2rem 1rem;
     }
 
+    .contactInfo h2 {
+        font-size: 1.8rem;
+    }
+
+    .contactInfo>.infoSection>p {
+        font-size: 1rem;
+    }
+
+    .contactItem {
+        margin-bottom: 40px;
+        padding: 0.8rem;
+    }
+
+    .contactIcon {
+        font-size: 1.5rem;
+        min-width: 35px;
+    }
+
+    .contactText h3 {
+        font-size: 1.1rem;
+    }
+
+    .socialSection h3 {
+        font-size: 1.3rem;
+    }
+
+    .socialLink {
+        width: 40px;
+        height: 40px;
+        font-size: 1.1rem;
+    }
+
+    .contactForm {
+        padding: 1.5rem;
+    }
+
+    .contactForm h2 {
+        font-size: 1.8rem;
+    }
+
     .formRow {
         grid-template-columns: 1fr;
+    }
+
+    .formGroup input,
+    .formGroup textarea {
+        padding: 0.7rem;
+        font-size: 0.95rem;
+    }
+
+    .submitBtn {
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
     }
 
     .faqSection {
@@ -316,9 +424,143 @@ background: #3789cc;
 
     .faqContainer h2 {
         font-size: 2rem;
+        margin-bottom: 2rem;
     }
 
     .faqGrid {
         grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .faqItem {
+        padding: 1.5rem;
+    }
+
+    .faqItem h3 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactHeader {
+        padding: 2rem 1rem 1.5rem;
+        height: 300px;
+    }
+
+    .contactHeader h1 {
+        font-size: 2rem;
+    }
+
+    .contactHeader p {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .heroButton {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .contactContainer {
+        padding: 1.5rem 0.75rem;
+        gap: 1.5rem;
+    }
+
+    .contactInfo h2 {
+        font-size: 1.6rem;
+    }
+
+    .contactInfo>.infoSection>p {
+        font-size: 0.9rem;
+    }
+
+    .contactItem {
+        margin-bottom: 30px;
+        padding: 0.6rem;
+        gap: 0.8rem;
+    }
+
+    .contactIcon {
+        font-size: 1.3rem;
+        min-width: 30px;
+    }
+
+    .contactText h3 {
+        font-size: 1rem;
+    }
+
+    .contactText p {
+        font-size: 0.9rem;
+    }
+
+    .socialSection h3 {
+        font-size: 1.2rem;
+    }
+
+    .socialLinks {
+        gap: 0.8rem;
+    }
+
+    .socialLink {
+        width: 35px;
+        height: 35px;
+        font-size: 1rem;
+    }
+
+    .contactForm {
+        padding: 1.2rem;
+        border-radius: 15px;
+    }
+
+    .contactForm h2 {
+        font-size: 1.6rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .formGroup {
+        margin-bottom: 1.2rem;
+    }
+
+    .formGroup label {
+        font-size: 0.9rem;
+    }
+
+    .formGroup input,
+    .formGroup textarea {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+        border-radius: 8px;
+    }
+
+    .formGroup textarea {
+        min-height: 100px;
+    }
+
+    .submitBtn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.8rem;
+        border-radius: 100px;
+    }
+
+    .faqSection {
+        padding: 2rem 0.75rem;
+    }
+
+    .faqContainer h2 {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .faqItem {
+        padding: 1.2rem;
+        border-radius: 12px;
+    }
+
+    .faqItem h3 {
+        font-size: 1.1rem;
+    }
+
+    .faqItem p {
+        font-size: 0.9rem;
     }
 }

@@ -4,7 +4,7 @@
     padding: 1rem 0;
     position: sticky;
     top: 0;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
     z-index: 100;
 }
 
@@ -21,16 +21,17 @@
     color: white;
     font-size: 1.3rem;
     font-weight: 900;
+    z-index: 101;
 }
 
 .logoText {
     color: white;
-
 }
 
 .navLinks {
     display: flex;
     gap: 2rem;
+    align-items: center;
 }
 
 .navLink {
@@ -64,11 +65,163 @@
     box-shadow: -8px 7px 0px 2px rgba(0, 0, 0, 1);
     position: relative;
     text-transform: uppercase;
-
-
-
 }
 
 .orderButton:hover {
     transform: scale(1.05);
+}
+
+/* Mobile Menu Button */
+.mobileMenuButton {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0.5rem;
+    z-index: 101;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+}
+
+.hamburger::before {
+    top: -8px;
+}
+
+.hamburger::after {
+    bottom: -8px;
+}
+
+.hamburger.active {
+    background-color: transparent;
+}
+
+.hamburger.active::before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.hamburger.active::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+}
+
+/* Desktop/Mobile button visibility */
+.desktopOnly {
+    display: block;
+}
+
+.mobileOnly {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .navContainer {
+        padding: 0 1.5rem;
+    }
+
+    .navLinks {
+        gap: 1.5rem;
+    }
+
+    .navLink {
+        font-size: 1.1rem;
+    }
+
+    .orderButton {
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .mobileMenuButton {
+        display: block;
+    }
+
+    .navLinks {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #3e78ca;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2rem;
+        transition: right 0.3s ease;
+        z-index: 100;
+    }
+
+    .navLinks.mobileOpen {
+        right: 0;
+    }
+
+    .navLink {
+        font-size: 1.5rem;
+        padding: 1rem 0;
+    }
+
+    .desktopOnly {
+        display: none;
+    }
+
+    .mobileOnly {
+        display: block;
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 102;
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .logo {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .navContainer {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        font-size: 1rem;
+    }
+
+    .navLink {
+        font-size: 1.3rem;
+    }
+
+    .mobileOnly {
+        bottom: 1rem;
+        right: 1rem;
+        padding: 0.8rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .hamburger,
+    .hamburger::before,
+    .hamburger::after {
+        width: 22px;
+    }
 }

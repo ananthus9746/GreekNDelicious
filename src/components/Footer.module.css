@@ -3,7 +3,7 @@
     background-color: #3e78ca;
     color: white;
     padding: 3rem 0 1rem 0;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .footerContainer {
@@ -13,6 +13,7 @@
     gap: 2rem;
     padding: 0 2rem;
     margin-bottom: 2rem;
+    max-width: 1400px;
 }
 
 .footerSection h3 {
@@ -20,7 +21,7 @@
     font-weight: bold;
     margin-bottom: 1rem;
     color: white;
-        font-family: 'Arial Black', Arial, sans-serif;
+    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .footerSection p {
@@ -47,4 +48,89 @@
 .footerLinks span {
     font-size: 0.8rem;
     opacity: 0.7;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .footerContainer {
+        gap: 1.5rem;
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .footerContainer {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+
+    .footerSection h3 {
+        font-size: 1.2rem;
+    }
+
+    .footerSection p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer {
+        padding: 2rem 0 1rem 0;
+    }
+
+    .footerContainer {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 1rem;
+        text-align: center;
+    }
+
+    .footerSection h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footerSection p {
+        font-size: 0.9rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footerLinks {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footerLinks span {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer {
+        padding: 1.5rem 0 1rem 0;
+    }
+
+    .footerContainer {
+        gap: 1.2rem;
+        padding: 0 0.75rem;
+    }
+
+    .footerSection h3 {
+        font-size: 1rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .footerSection p {
+        font-size: 0.85rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .footerLinks {
+        gap: 0.8rem;
+    }
+
+    .footerLinks span {
+        font-size: 0.7rem;
+    }
 }
