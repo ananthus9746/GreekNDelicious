@@ -1,14 +1,13 @@
 /* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 /* CSS Variables for Fonts */
 :root {
     /* Font Families */
-    --font-aalto: 'Aalto', serif;
-    --font-minion-pro: 'minion-pro', serif;
-    --font-bounties: 'BOUNTIES', sans-serif;
-    --font-poppins: 'Poppins', sans-serif;
+    --font-aalto: 'Aalto', 'Times New Roman', serif;
+    --font-minion-pro: 'Minion Pro', 'Times New Roman', serif;
+    --font-bounties: 'BOUNTIES', 'Arial Black', sans-serif;
+    --font-poppins: 'Poppins', 'Arial', sans-serif;
 
     /* Font Weights */
     --font-light: 300;
@@ -53,9 +52,6 @@ body {
     line-height: 1.6;
     color: #333;
     background-color: #fff;
-    font-family: "Anton", sans-serif;
-    font-weight: 400;
-    font-style: normal;
     overflow-x: hidden;
 }
 
@@ -189,6 +185,7 @@ img {
     cursor: pointer;
     transition: all 0.3s ease;
     font-size: 1rem;
+    font-family: var(--font-poppins);
 }
 
 @media (max-width: 768px) {

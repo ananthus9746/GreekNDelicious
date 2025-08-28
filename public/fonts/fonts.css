@@ -1,0 +1,156 @@
+/* Custom Font Loading for Greek N Delicious */
+
+/* Aalto Font Family */
+@font-face {
+    font-family: 'Aalto';
+    src: url('./aalto-display-personal-use.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Aalto';
+    src: url('./aalto-display-personal-use.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Minion Pro Font Family */
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-It.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-MediumIt.otf') format('opentype');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-Semibold.otf') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-SemiboldIt.otf') format('opentype');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-BoldIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-BoldCn.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: condensed;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Minion Pro';
+    src: url('./MinionPro-BoldCnIt.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: condensed;
+    font-display: swap;
+}
+
+/* BOUNTIES Font Family */
+@font-face {
+    font-family: 'BOUNTIES';
+    src: url('./BOUNTIES.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BOUNTIES';
+    src: url('./BOUNTIES.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Font Fallbacks */
+.font-aalto {
+    font-family: 'Aalto', 'Times New Roman', serif;
+}
+
+.font-minion-pro {
+    font-family: 'Minion Pro', 'Times New Roman', serif;
+}
+
+.font-bounties {
+    font-family: 'BOUNTIES', 'Arial Black', sans-serif;
+}
+
+.font-poppins {
+    font-family: 'Poppins', 'Arial', sans-serif;
+}
+
+/* Brand-specific font classes */
+.brand-text {
+    font-family: 'BOUNTIES', 'Arial Black', sans-serif;
+    font-weight: 700;
+}
+
+.elegant-text {
+    font-family: 'Minion Pro', 'Times New Roman', serif;
+    font-weight: 400;
+}
+
+.heading-text {
+    font-family: 'Aalto', 'Times New Roman', serif;
+    font-weight: 700;
+}
+
+.body-text {
+    font-family: 'Poppins', 'Arial', sans-serif;
+    font-weight: 400;
+}

@@ -23,7 +23,7 @@ const Header = () => {
             <nav className={styles.navbar}>
                 <div className={styles.navContainer}>
                     <div className={styles.logo}>
-                        <span className={styles.logoText}>GREEK'N DELICIOUS</span>
+                        <img src="/logowhite.png" alt="Greek N Delicious Logo" className={styles.logoImage} />
                     </div>
 
                     {/* Mobile menu button */}

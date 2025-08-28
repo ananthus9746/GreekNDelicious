@@ -15,14 +15,14 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    font-family: 'Arial Black', Arial, sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .menuTitle {
     font-size: 3.5rem;
     font-weight: bold;
     margin-bottom: 1rem;
-    font-family: 'Arial Black', Arial, sans-serif;
+    font-family: var(--font-aalto);
     color: rgb(231, 231, 231);
     font-weight: 400;
     text-transform: uppercase;
@@ -37,6 +37,7 @@
     font-weight: 300;
     line-height: 1.4;
     padding: 0 2rem;
+    font-family: var(--font-minion-pro);
 }
 
 .buttonContainer {
@@ -59,7 +60,7 @@
     position: relative;
     text-transform: uppercase;
     font-size: 1.3rem;
-    font-family: 'Arial Black', Arial, sans-serif;
+    font-family: var(--font-poppins);
 }
 
 .menuButton:hover {

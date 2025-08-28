@@ -38,6 +38,9 @@ const Home = () => {
                     </div>
                 </div>
 
+                <p className={styles.greekpink}>Φάτε σαν Έλληνας</p>
+                <p className={styles.greekpinntwo}>πάντα φρέσκο</p>
+
                 <img className={styles.greekimage} src={'/greek.png'} />
             </section>
 
@@ -64,6 +67,7 @@ const Home = () => {
                             ESSENCE OF
                             GREEK CUISINE
                         </h2>
+                        <p className={styles.greektext}>Ζήστε την πραγματική ουσία της αυθεντικής ελληνικής κουζίνας</p>
                         <p className={styles.productDescription}>
                             At Greek’n Delicious, we bring you authentic Greek flavors made fresh daily.
                             From gyros and souvlaki to salads and homemade sauces,

@@ -3,7 +3,6 @@
     background-color: #3e78ca;
     color: white;
     padding: 3rem 0 1rem 0;
-    font-family: 'Arial Black', Arial, sans-serif;
 }
 
 .footerContainer {
@@ -17,11 +16,12 @@
 }
 
 .footerSection h3 {
-    font-size: 1.3rem;
+    font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 1rem;
     color: white;
-    font-family: 'Arial Black', Arial, sans-serif;
+        letter-spacing:2px;
+    font-family: var(--font-aalto);
 }
 
 .footerSection p {
@@ -29,7 +29,7 @@
     line-height: 1.5;
     margin-bottom: 1rem;
     opacity: 0.9;
-    font-weight: 300;
+    font-weight: 700;
     color: rgb(228, 228, 228);
 }
 
@@ -48,6 +48,7 @@
 .footerLinks span {
     font-size: 0.8rem;
     opacity: 0.7;
+    font-weight: 600;
 }
 
 /* Responsive Design */
