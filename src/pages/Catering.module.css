@@ -344,136 +344,19 @@
 }
 
 @media (max-width: 1024px) {
-    .heroSection {
-        height: 600px;
-    }
 
-    .heroTitle {
-        font-size: 3rem;
-    }
-
-    .heroSubtitle {
-        font-size: 1.1rem;
-    }
 
     .serviceContent {
         grid-template-columns: 1fr;
         min-height: auto;
     }
+        .reversed .serviceContent {
+            grid-template-columns:  1fr;
+        }
 
-    .reversed .serviceText,
-    .reversed .serviceImage {
-        order: unset;
-    }
-
-    .serviceText {
-        padding: 40px 30px;
-    }
-
-    .serviceName {
-        font-size: 2rem;
-    }
-
-    .serviceHeader {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .serviceImage {
-        min-height: 350px;
-    }
+  
 }
 
-@media (max-width: 768px) {
-    .heroSection {
-        height: 500px;
-    }
-
-    .heroTitle {
-        font-size: 2.5rem;
-    }
-
-    .heroSubtitle {
-        font-size: 1rem;
-        margin-bottom: 1.5rem;
-    }
-
-    .heroButton {
-        padding: 1rem 1.5rem;
-        font-size: 1.1rem;
-    }
-
-    .servicesContainer {
-        padding: 20px 10px;
-    }
-
-    .serviceSection {
-        margin-bottom: 30px;
-        border-radius: 16px;
-    }
-
-    .serviceText {
-        padding: 30px 20px;
-    }
-
-    .serviceName {
-        font-size: 1.8rem;
-    }
-
-    .serviceHeader h2 {
-        font-size: 1.8rem;
-    }
-
-    .serviceDescription {
-        font-size: 0.95rem;
-    }
-
-    .serviceDetailedDescription {
-        font-size: 0.85rem;
-    }
-
-    .eventFilter {
-        gap: 8px;
-        margin: 20px 0;
-        padding: 0 10px;
-    }
-
-    .eventButton {
-        padding: 8px 12px;
-        font-size: 0.85rem;
-    }
-
-    .serviceActions {
-        flex-direction: column;
-    }
-
-    .contactButton,
-    .learnMoreButton {
-        width: 100%;
-        justify-content: center;
-        display: flex;
-        align-items: center;
-        padding: 14px 20px;
-        font-size: 0.9rem;
-    }
-
-    .serviceImage {
-        min-height: 300px;
-    }
-
-    .serviceFeatures li,
-    .menuHighlights li {
-        font-size: 0.85rem;
-    }
-
-    .additionalInfo {
-        padding: 15px;
-    }
-
-    .additionalInfo p {
-        font-size: 0.85rem;
-    }
-}
 
 @media (max-width: 480px) {
     .heroSection {

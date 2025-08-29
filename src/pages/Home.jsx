@@ -13,7 +13,7 @@ const Home = () => {
 
     return (
         <div className={styles.pageContainer}>
-           
+
 
             {/* Hero Section */}
             <section className={styles.heroSection}>
@@ -82,12 +82,43 @@ const Home = () => {
             {/* Events Section */}
             <section className={styles.featuredSection}>
                 <div className={styles.featuredLogos}>
-                    <div className={styles.cateringEvent}><span>Birthday Parties</span></div>
-                    <div className={styles.cateringEvent}><span>Weddings Parties</span></div>
-                    <div className={styles.cateringEvent}><span>Corporate Events</span></div>
-                    <div className={styles.cateringEvent}><span>Graduations Parties</span></div>
-                    <div className={styles.cateringEvent}><span>Family Reunions</span></div>
-                    <div className={styles.cateringEvent}><span>Private Parties</span></div>
+                    <div className={styles.mobileFeaturedScroll}>
+                        <div className={styles.cateringEvent}><span>Birthday Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Weddings Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Corporate Events</span></div>
+                        <div className={styles.cateringEvent}><span>Graduations Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Family Reunions</span></div>
+                        <div className={styles.cateringEvent}><span>Private Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Beach Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Holiday Celebrations</span></div>
+                        {/* Duplicate items for continuous scroll effect */}
+                        <div className={styles.cateringEvent}><span>Birthday Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Weddings Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Corporate Events</span></div>
+                        <div className={styles.cateringEvent}><span>Graduations Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Family Reunions</span></div>
+                        <div className={styles.cateringEvent}><span>Private Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Beach Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Holiday Celebrations</span></div>
+
+                        <div className={styles.cateringEvent}><span>Birthday Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Weddings Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Corporate Events</span></div>
+                        <div className={styles.cateringEvent}><span>Graduations Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Family Reunions</span></div>
+                        <div className={styles.cateringEvent}><span>Private Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Beach Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Holiday Celebrations</span></div>
+                        {/* Duplicate items for continuous scroll effect */}
+                        <div className={styles.cateringEvent}><span>Birthday Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Weddings Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Corporate Events</span></div>
+                        <div className={styles.cateringEvent}><span>Graduations Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Family Reunions</span></div>
+                        <div className={styles.cateringEvent}><span>Private Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Beach Parties</span></div>
+                        <div className={styles.cateringEvent}><span>Holiday Celebrations</span></div>
+                    </div>
                 </div>
             </section>
 
@@ -167,7 +198,7 @@ const Home = () => {
                 <img src={'/leaf.png'} className={styles.leaf} />
             </section>
 
-            
+
         </div>
     );
 };

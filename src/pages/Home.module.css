@@ -193,7 +193,8 @@
     opacity: 0.9;
     font-family: var(--font-bounties);
 }
-.greektext{
+
+.greektext {
     font-size: 1.2rem;
     margin-bottom: 2rem;
     opacity: 0.9;
@@ -263,10 +264,10 @@
 
 .restaurantDescription {
     font-size: 1.5rem;
-        line-height: 1.6;
-        margin-bottom: 2rem;
-        opacity: 0.9;
-        font-family: var(--font-bounties);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    font-family: var(--font-bounties);
 }
 
 .restaurantHours {
@@ -385,7 +386,8 @@
     justify-content: center;
     max-width: 1000px;
     text-align: center;
-        font-family: var(--font-bounties);}
+    font-family: var(--font-bounties);
+}
 
 .sistersStory p {
     margin-bottom: 1.5rem;
@@ -458,7 +460,6 @@
 /* Featured In Section */
 .featuredSection {
     background-color: #ffffff;
-    padding: 2rem;
     text-align: center;
 }
 
@@ -499,7 +500,26 @@
     font-weight: bold;
     text-align: center;
     font-family: var(--font-aalto);
-    
+
+}
+.featuredLogos {
+    overflow: hidden;
+}
+
+.mobileFeaturedScroll {
+    display: flex;
+    animation: scrollFeatured 90s linear infinite;
+    white-space: nowrap;
+}
+
+@keyframes scrollFeatured {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 
@@ -513,11 +533,22 @@
 
     .heroTitle {
         font-size: 3rem;
-        letter-spacing: -1px;
+        letter-spacing: 4px;
     }
 
     .heroSubtitle {
         font-size: 1.2rem;
+    }
+
+    .greekpink {
+        top: 340px;
+
+    }
+
+    .greekpinntwo {
+        top: 559px;
+        font-size: 1.4rem;
+
     }
 
     .heroImageContainer {
@@ -525,10 +556,13 @@
         height: 300px;
         transform: none;
         margin-top: 2rem;
+        rotate: -4deg;
+
     }
 
     .herobtn {
         justify-content: center;
+        margin-top: 20px;
     }
 
     .orderButton {
@@ -539,13 +573,25 @@
     .productsContainer {
         flex-direction: column;
         text-align: center;
-        padding: 3rem 1rem;
+        /* padding: 3rem 1rem; */
         gap: 3rem;
     }
 
     .productLeft,
     .productRight {
         width: 100%;
+    }
+    .greek2{
+        height: 00px;
+        bottom: -10px;
+    }
+
+    .productImage {
+        min-height: 400px;
+    }
+
+    .productImage img {
+        height: 400px;
     }
 
     .productImage {
@@ -554,15 +600,18 @@
 
     .productTitle {
         font-size: 2.5rem;
+        padding: 10px;
     }
 
     .productDescription {
-        font-size: 1rem;
+        font-size: 1.3rem;
+        padding: 10px;
     }
 
     .productButton {
         padding: 1.2rem 2rem;
         font-size: 1rem;
+        margin-bottom: 40px;
     }
 
     .restaurantContainer {
@@ -576,11 +625,11 @@
     }
 
     .restaurantTitle {
-        font-size: 2.5rem;
+        font-size: 4.5rem;
     }
 
     .restaurantDescription {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .restaurantButton {
@@ -594,7 +643,10 @@
     }
 
     .quote {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
+    }
+    .quoteAuthor{
+        font-size: 1.2rem;
     }
 
     .imagecontainer {
@@ -609,7 +661,11 @@
 
     .sistersStory {
         font-size: 1rem;
-        padding: 0 1rem;
+        padding: 0 0rem;
+    }
+.sistersStory p {
+font-size: 1.2rem;
+    padding: 0 0rem;
     }
 
     .storyButton {
@@ -628,23 +684,20 @@
     }
 
     .featuredLogos {
-        gap: 1rem;
+        overflow: hidden;
     }
+
+
 
     .cateringEvent {
-        padding: 1.5rem;
-        min-width: 150px;
+        min-width: 200px;
+        flex-shrink: 0;
     }
-
-    .cateringEvent span {
-        font-size: 1rem;
-    }
-
-    .port,
-    .greekimage,
-    .greek2,
-    .flower,
-    .leaf {
-        display: none;
-    }
+   .port,
+   .greekimage,
+   .greek2,
+   .flower,
+   .leaf {
+       display: none;
+   }
 }
